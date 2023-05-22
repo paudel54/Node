@@ -1,0 +1,2 @@
+commonjs or ECMA Script Standard 
+Node Js Supported ECMA Script: before it was commonJS tediuos
