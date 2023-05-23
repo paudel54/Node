@@ -21,20 +21,31 @@ const friends = [
 ];
 
 server.on('request', (req, res) => {
-    if (req.url === '/friends') {
+    // splites anything that comes up with / slash and updates an array
+    //        /friends/2 => ['', 'friends', '2']
+    const items = req.url.split('/');
+    console.log(items);
+    if (items[1] === 'friends') {
         // res.writeHead(200, {
         //     'Content-Type': 'application/json',
         // });
         // equivalent code
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify(
-            {
-                id: 1,
-                name: 'Newton'
-            }
-        ))
-    } else if (req.url === '/message') {
+        // res.end(JSON.stringify(
+        //     {
+        //         id: 1,
+        //         name: 'Newton'
+        //     }
+        // ))
+        // for URL split upto 3 route with index
+        if (items.length === 3) {
+            const friendIndex = +items[2];
+            res.end(JSON.stringify(friends[friendIndex]));
+        } else {
+            res.end(JSON.stringify(friends));
+        }
+    } else if (items[1] === 'message') {
         res.setHeader('Content-Type', 'text/html')
         res.write('<html>');
         res.write('<body>');
