@@ -18,7 +18,7 @@ const friends = [
 
 // Establishing a route: 
 app.get('/', (req, res) => {
-    res.send('Helllooooooo guys');
+    res.send('Hellloooo guys');
 })
 
 app.get('/messages', (req, res) => {
