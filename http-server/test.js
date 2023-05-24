@@ -10,3 +10,9 @@ fetch('http://localhost:3000/friends', {
     body: JSON.stringify({ id: 3, name: 'Ryan Dahl' })
 });
 
+fetch('http://localhost:3000/friends', {
+    method: 'POST',
+    body: JSON.stringify({ id: 4, name: 'Balen' })
+})
+    .then((response) => response.json())
+    .then((friend) => console.log(friend));

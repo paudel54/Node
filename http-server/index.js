@@ -32,8 +32,9 @@ server.on('request', (req, res) => {
             // JSON.Parse() helps in acheiveing this
             const friend = data.toString();
             console.log('Request:', data)
+            // adding information from post request to the object List
             friends.push(JSON.parse(friend));
-        })
+        });
 
     }
     else if (req.method === 'GET' && items[1] === 'friends') {
