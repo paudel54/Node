@@ -1,0 +1,24 @@
+convinent solution for creating web server aside http method
+Most best to learn to have Express to create and manage Servers:
+
+Express on of the most popular backend framework
+Great sources for web devl 
+
+Introduction to Express> 
+
+Working with express> 
+easy web server setup accessible 
+
+.4 Express vs next.js vs Koa
+Frameworks to use Node backends: 
+
+express 2010 : responding req use callback Handlers.  
+Idea of express to use min code and concept of middleware introduced.
+koa, more promise based and asyc await syntax.    
+Next js: benifited goal to make easy to use serverside rendering.  
+
+goal: SSR is ! because to enhance performance and SEO. Page load would be much quicker. 
+Next also supports TypeScript. 
+Building Apis are much versatile in Express. 
+once expert in express you can do anyof others. 
+ 
