@@ -11,3 +11,15 @@ WHITELISTING: CLEARLY ALLOWING ACCESS TO A PARTICULAR PRIVILEGE OR SERVICE.
 BLACKLISTING: IT'S REVERSE. 
 
 ORIGIN WE ALLOW ON HEADER ARE WHITELIST
+
+How to make endpoint that echo same data about anything 
+
+req is readable stream
+res to writiable Stream  and we can pipe it. 
+req.pipe(res)
+fundamentals : Data Using Steams. 
+
+
+use Of framework to use to fetch and post and allow us to make more secure
+learning curve might be higher but we can understnd the power oto solve 
+senior can know low and high both sections. 
