@@ -13,8 +13,23 @@ const friends = [
         id: 1,
         name: 'Sansrit Paudel',
     },
+    {
+        id: 3,
+        name: 'Pemba Lama',
+    }
 
 ];
+
+// App.use accomplished first the API hit endpointes and get response from it 
+app.use((req, res, next) => {
+    const start = Date.now();
+    // we always need next() method to use middleware. 
+    next();
+    //actions go here... 
+    const delta = Date.now() - start;
+    console.log(`${req.method} ${req.url} ${delta}ms`);
+})
+
 
 // Establishing a route: 
 app.get('/', (req, res) => {

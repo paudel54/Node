@@ -21,4 +21,8 @@ goal: SSR is ! because to enhance performance and SEO. Page load would be much q
 Next also supports TypeScript. 
 Building Apis are much versatile in Express. 
 once expert in express you can do anyof others. 
+
+Testing API with POStman 
+
+middlewares are are required for validation of user or auth process. 
  
