@@ -1,0 +1,13 @@
+Cross Origin Resource Sharing (CORS);
+way of relaxing restriction that origin policy puts on us:
+ 
+wiki page refresh many request ar made, it gets diagram media from different domain wikimedia
+
+Access control allow origin * this helps to navigate between different domains: 
+CORS header allow us to access and provide 
+
+
+WHITELISTING: CLEARLY ALLOWING ACCESS TO A PARTICULAR PRIVILEGE OR SERVICE. 
+BLACKLISTING: IT'S REVERSE. 
+
+ORIGIN WE ALLOW ON HEADER ARE WHITELIST
