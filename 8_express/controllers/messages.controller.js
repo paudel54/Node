@@ -5,9 +5,15 @@ const path = require('path');
 // extra debugging benifits use named function instead of arrow if any error compiler can point to it .
 // fileName should work onto absolute path. 
 function getMessages(req, res) {
+
     // res.send('<ul> <li> Hello albert</li></ul>')
     // _dirname points to controller folder. its node default prop
-    res.sendFile(path.join(__dirname, '..', 'public', 'images', 'student.jpg'));
+    //res.sendFile(path.join(__dirname, '..', 'public', 'images', 'student.jpg'));
+    res.render('messages', {
+        title: 'Message to my Friends',
+        friend: 'Elon Musk'
+    })
+
 }
 function postMessages(req, res) {
     res.send('Updating Messages....');
