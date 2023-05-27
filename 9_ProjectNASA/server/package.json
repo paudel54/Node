@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "server": "^1.0.38"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "watch" : "nodemon ./src/server.js",
+    "start": "node ./src/server.js"
+    
+  },
+  "name": "nasa-project-api", 
+  "version": "1.0.0",
+  "main": "./src/server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
