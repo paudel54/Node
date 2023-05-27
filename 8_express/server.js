@@ -21,6 +21,9 @@ app.use((req, res, next) => {
 
 // next middleware to parse JSON
 // express.json() is a middleware if no element it puts it as empty obj
+// serving website with node. 
+// possible url would be locahost:3000/site/index.html
+app.use('/site', express.static('public'));
 app.use(express.json());
 
 // working with express router. Organized onto folder. 
