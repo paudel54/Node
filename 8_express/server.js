@@ -2,8 +2,8 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
-const friendsController = require('./controllers/friends.controller');
-const messagesController = require('./controllers/messages.controller');
+// const friendsController = require('./controllers/friends.controller');
+// const messagesController = require('./controllers/messages.controller');
 const friendsRouter = require('./routes/friends.router');
 const messagesRouter = require('./routes/messages.router');
 
@@ -15,7 +15,8 @@ app.use((req, res, next) => {
     next();
     //actions go here... 
     const delta = Date.now() - start;
-    console.log(`${req.method} ${req.url} ${delta}ms`);
+    // can add base URL to make paths 
+    console.log(`${req.method}${req.baseUrl} /${req.url} ${delta}ms`);
 })
 
 // next middleware to parse JSON
@@ -26,10 +27,6 @@ app.use(express.json());
 // const friendsRouter = express.Router();
 
 //server doesn't understands json so needed to be parsed. 
-// Establishing a route: 
-app.get('/', (req, res) => {
-    res.send('Hellloooo guys');
-})
 app.use('/friends', friendsRouter);
 app.use('/messages', messagesRouter);
 // simplifying routes path with express router. 
