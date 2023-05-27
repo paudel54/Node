@@ -21,3 +21,6 @@ TEMPLATING ENGINE
 https://expressjs.com/en/resources/template-engines.html
 CURRENTLY
 SERVING BROWESER FROM SERVER. 
+
+
+LAYOUTS AND SEPERATION OF CONCERNS. 
