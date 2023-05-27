@@ -1,0 +1,23 @@
+minutes Reads:
+Pipe In Node Explained.
+https://www.becomebetterprogrammer.com/what-does-pipe-mean-in-node-js-how-to-use-it-practical-guide/
+Read Stream on Node Modules
+https://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options
+
+RESTFUL
+
+CRUD WITH HTTP APIS/RESTFUL APIS / ONTO CERTAIN COLLECTION 
+HTTP VERBS POST,PUT,PATCH,DELETE.
+POST:  CREATE RESOURCES.
+PUT : UPDATES AND REPLACES
+PATCH: UPDATE SPECIFIC ITEM ON COLLECTION ONLY MODIFIES NOT REPLACING
+DELETE: DEL 
+
+RESPONSE CODE MUST BE AS PRECISE AS WE CAN . 201 
+
+NON blocking IO:: 
+
+TEMPLATING ENGINE
+https://expressjs.com/en/resources/template-engines.html
+CURRENTLY
+SERVING BROWESER FROM SERVER. 
