@@ -12,6 +12,7 @@ function useLaunches(onSuccessSound, onAbortSound, onFailureSound) {
 
   const getLaunches = useCallback(async () => {
     const fetchedLaunches = await httpGetLaunches();
+    // console.log('checking fetched lunched dta', fetchedLaunches);
     saveLaunches(fetchedLaunches);
   }, []);
 
