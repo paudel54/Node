@@ -42,6 +42,11 @@ function loadPlanetsData() {
     });
 }
 
+function getAllPlanets() {
+    return habitablePlanets;
+}
+
+
 // data, error, end are events of createReadStream: see Docs
 
 
@@ -49,5 +54,5 @@ function loadPlanetsData() {
 module.exports = {
     // renaming the exports
     loadPlanetsData,
-    planets: habitablePlanets,
+    getAllPlanets,
 };
